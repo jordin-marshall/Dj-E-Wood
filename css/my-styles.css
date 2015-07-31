@@ -93,7 +93,9 @@ li {
 Color Scheme
 
 ***************************************************************************************************************/
-
+.navbar-default .navbar-toggle .icon-bar,.navbar-default2 .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
 .navbar-default .navbar-brand {
 	
 	
@@ -272,8 +274,8 @@ Color Scheme
 
 .header-image2 h3{
 	position: absolute;
-	top:11.4em;
-	left: 6em;
+	top:62%;
+	left: 18%;
 	font-family: cursive;
 	text-shadow: 2px 2px 2px black;
 	color: white;
@@ -470,7 +472,7 @@ footer nav p{
 	
 	position: absolute;
 	left: 60%;
-	overflow: hidden;
+	
 	color: #fff;
 	text-shadow: 1px 1px 1px aqua;	
 	
@@ -530,14 +532,14 @@ footer nav p{
 #Gallery{
 	width:90%;
 	margin: auto;
-	padding-bottom: 600px;
+	padding-bottom: 50px;
 	height: 1300px;
 	
 }
 
 .gal{
 	
-	height: 150%;
+	height: 100%;
 }
 
 .gal li:nth-child(7n+0){
@@ -654,15 +656,65 @@ footer nav p{
 
 @media (max-width: 1145px){
 		.header-image h3{
-			position: absolute;
 			top:56%;
-			left: 63%;
-			font-family: cursive;
-			text-shadow: 2px 2px 2px black;
-			color: white;
+			left: 63%;	
 		}
+	
+		.header-image2 h3{
+			top:62%;
+			left: 28%;
+			font-size: 2em;
+			}
+		.lb-album{
+			width: 100%;			
+		}
+	
+		.gal{
+			height:100%;
+		overflow: hidden;		
+			}
+	
+	#Gallery{
+		height:100%;
+	}
+	
+	.gal li:nth-child(7n+0){
+	border-left:none;
+		}
+		.gal li:nth-child(7n+1){
+			border-right:none;
+		}
+		.gal li:nth-child(n+50){
+			border-bottom:none;
+		}
+
+		.gal li:nth-child(7),.gal li:nth-child(6),.gal li:nth-child(5),
+		.gal li:nth-child(4),.gal li:nth-child(3),.gal li:nth-child(2),
+		.gal li:nth-child(1){
+			border-top:none;
+		}
+	.lb-album li > a span,.lb-album li > a, .gal-thumb{
+		max-width:120px;
+		max-height:120px
+	}
+	.icons{
+	width:110px;
+	height:60px;
+	}
+	
 }
 
+@media (max-width:978px){
+		.lb-album li > a span,.lb-album li > a, .gal-thumb,icons{
+		max-width:110px;
+		max-height:110px
+	}
+	.icons{
+	width:100px;
+	height:50px;
+	}
+
+}
 @media (max-width:955px){
 	.social-media ul{
 	margin: 0;
@@ -687,6 +739,21 @@ footer nav p{
 		font-size: em;
 		
 	}
+	
+	.header-image2 h3{
+			font-size: 1.6em;
+			top:65%;
+			}
+	
+	.questions{
+	padding-top: 100px;
+	padding-right:20px;
+	margin:auto ;
+	padding-bottom: 10px;
+	width: 100%;
+	
+}
+	
 }
 
 @media (max-width: 935px){
@@ -700,8 +767,27 @@ footer nav p{
 	padding-right: 0px;
 				}
 	
+	.col-xs-12{
+		padding-bottom: 55px;
+		overflow: auto;
+		height: 100%;
+	}
+	.about-title h2{
+		top:0%;
+	}
 	
-
+	.booking{
+		width:100%;
+	}
+	
+	.lb-album li > a span,.lb-album li > a, .gal-thumb,icons{
+		max-width:100px;
+		max-height:100px
+	}
+	.icons{
+	width:70px;
+	height:40px;
+	}
 }
 
 @media (max-width: 767px){
@@ -728,7 +814,42 @@ footer nav p{
 		padding-bottom: 10px;
 		width:0%;
 		margin-left: 24%;
-}
+			}
+	
+	.header-image2 h3{
+			top:65%;
+			left:20%;
+			font-size: 1.4em;
+			}
+	
+	.about-bio{
+		padding-top: 120px;
+		padding-right: 50px;
+		left:0%;
+	}
+
+	.about-title h2{
+		left:25%;
+	}
+
+
+.about-pic img{
+		padding-top: 0px;
+		width: 90%;
+		padding-left: 50px;
+		padding-top: 20px;
+		
+	}
+	
+	.questions{
+		padding-top:20px;
+	}
+	
+	.lb-album li > a span,.lb-album li > a, .gal-thumb,icons{
+		max-width:80px;
+		max-height:80px;	
+	}
+	
 }
 
 
@@ -759,8 +880,18 @@ footer nav p{
 	
 	.question-box{
 	padding-bottom: 10px;
-	
 	margin-left: 10%;
-}
+	}
+
+	.header-image2 h3{
+			left: 3%;
+			font-size: 1.2em;
+			
+			}
+	.about-title h2{
+		left:15%;
+	}
+	
+	
 
 }
