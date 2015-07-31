@@ -16,6 +16,19 @@ font-family: 'Droid Serif', serif;
     src: url('Dancing Script OT.otf');
 }
 
+
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 p{
 	color: #000;
 	text-align: center;
@@ -28,8 +41,11 @@ p{
 h2 {
 	text-align: center;
 	font-family: 'wed-font';
-	font-weight: 100;
-	
+	font-weight: 100;	
+}
+
+h1{
+	font-family: 'curse-font';
 }
 
 h1,h3{
@@ -40,6 +56,7 @@ h1,h3{
 												General
 
 ***************************************************************************************************************/
+
 body{
 	max-height: 100%;
 	overflow-x: hidden;
@@ -59,6 +76,17 @@ li {
 	height:80px;
 }
 
+.iconz{
+	width:280px;
+	height:80px;	
+}
+
+.icons{
+	padding-left: 1px;
+	padding-top:10px;
+	width:130px;
+	height:80px;
+}
 /************************************************************************************************************
 
 					
@@ -84,31 +112,56 @@ Color Scheme
 	background-color: #00adef;
 }
 
+.navbar-default2 {
+	background-image: none;
+	background-color: #000;
+	padding-bottom: 5px;
+	
+}
+
+
 .navbar-nav>li{
 
 }
 
 .navbar-nav a{
-	font-family: 'Abril Fatface', cursive;
-	
+
 
 }
 
 .navbar-default .navbar-nav>li>a {
 		color: #fff;
 		background-color: ;
-		text-shadow: 1px 1px 1px black;
+		
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
 	color: #2CC0B3;
-	background-color:#f5f5f5;
+	background-color:#000;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
 	background-image: none;
-	background-color: ;
-	text-shadow: 1px 1px 1px white;
+	background-color:  #f5f5ff;
+	text-shadow: 1px 1px 6px white;
+	
+}
+
+.navbar-default2 .navbar-nav>li>a {
+		color: #fff;
+		background-color: ;
+		text-shadow:;
+}
+
+.navbar-default2 .navbar-nav>li>a:focus, .navbar-default2 .navbar-nav>li>a:hover{
+	color: #2CC0B3;
+	background-color:#000;
+}
+
+.navbar-default2 .navbar-nav>.active>a, .navbar-default2 .navbar-nav>.open>a {
+	background-image: none;
+	background-color:  #00adef;
+	text-shadow: 0px 0px 10px white;
 	
 }
 
@@ -148,16 +201,19 @@ Color Scheme
 .navbar ul a{
 	text-align: center;
 	width:100px;
-	font-size: 1.0em;
-	font-family: 'wed-font';
-	font-weight: 600;
+	font-size: 1.2em;
+	font-family: 'goth-font';
+	font-weight:100 ;
+	text-shadow: 6px 1px 8px ;
 }
 /************************************************************************************************************
 
 												Header
 
 ***************************************************************************************************************/
-
+.header-bio{
+	padding: 10px;
+}
 
 
 .header-img{
@@ -185,9 +241,7 @@ Color Scheme
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	border-bottom: solid;
-	border-color: rgba(0,0,0.4);
-	
-	
+	border-color: rgba(0,0,0.4);	
 }
 
 .header-image h3{
@@ -198,21 +252,56 @@ Color Scheme
 	text-shadow: 2px 2px 2px black;
 	color: white;
 }
+
+.header-image h3:after{
+	position: static;
+}
+
+
+
+.header-image2{
+	height: 390px;
+	width:100%;
+	background-image: url(../Eli/floor-lights.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-bottom: solid;
+	border-color: rgba(0,0,0.4);	
+}
+
+
+.header-image2 h3{
+	position: absolute;
+	top:11.4em;
+	left: 6em;
+	font-family: cursive;
+	text-shadow: 2px 2px 2px black;
+	color: white;
+	font-size: 2.6em;
+	font-stretch:ultra-expanded;
+}
+
+.header-image2 h3:after{
+	position: static;
+}
+
 /************************************************************************************************************
 
 												Footer
 
 ***************************************************************************************************************/
-#footer{
-	padding-top: 20px;
-	border-top: solid 2px;
-	border-color: #000;
-}
+
 
 footer{
-	padding-top: 20px;
-	border-top: solid 2px;
-	border-color: black;
+	padding-top: 0px;
+	overflow: hidden;
+	
+	
+}
+
+#footer{
+	padding-top: 0px;
+	
 }
 
 footer .logo{
@@ -231,15 +320,38 @@ footer .logo{
 	color:black;	
 }
 
+.social-media ul{
+	width:100%;
+	margin: 0;
+	padding-right: 20%;
+	
+}
 .social-media li{
 	display: inline-block;
 	float: right;
 	margin-right: 50px;
 	padding-bottom: 10px;
+	
 }
 
+.social-media li img{
+	height:30px;
+	width:30px;
+}
 
+footer nav{
+	border-top: solid 2px;
+	padding-top: 5px;
+	background-image: url("../Eli/texture.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:50px;
+}
 
+footer nav p{
+	padding-top: 6px;
+	color: aliceblue
+}
 /************************************************************************************************************
 
 												Row
@@ -269,7 +381,9 @@ footer .logo{
 												Home
 
 ***************************************************************************************************************/
-
+.contact{
+	width:85%;
+	margin: auto;}
 
 .questionaire h1{
 	font-family: curse-font;
@@ -286,47 +400,160 @@ footer .logo{
 
 .questionaire p{
 	padding-bottom: 25px;
+	font-weight: bold;
 }
 
-.question-box h3{
+.question-box1 h3{
 	padding: 10px;
 	width: 25%;
 	margin: auto;
 	border: solid black;
-	background-color: peachpuff;
-	color: black;
+	background-image: url("../Eli/texture.jpg");
+	background-size: cover;
+	color: lightcyan;
 	font-weight: 400;
+	text-shadow: 4px 2px 4px black;
+	box-shadow: 0px 0px 30px black;
 }
 
 .question-box{
-	padding-bottom: 50px;
+	padding-bottom: 10px;
+	width:30%;
+	margin: auto;
 }
 
+.question-box1{
+	padding-bottom: 50px;
+	
+}
 /************************************************************************************************************
 
 												About
 
 ***************************************************************************************************************/
 
+#About{
+	padding-top: 300px;
+	 height: 630px;
+	text-align: center;
+	padding-top: 30px;
+	position: relative;
+	overflow: hidden;
+	background-color: #15191f 		
+}
+
+#About p{
+	color:#fff;
+}
+
+.row-about{
+	padding-bottom:130px;
+
+}
+
+#About-head {
+	color:#000;
+	font-size: 1.3em;
+	font-family: 'Droid Serif';
+}
+
+.about-title{
+	padding-top: 0px;	
+}
+
+.about-title h2{
+	
+	font-size: 5em;
+	
+	border-bottom: solid;
+	
+	position: absolute;
+	left: 60%;
+	overflow: hidden;
+	color: #fff;
+	text-shadow: 1px 1px 1px aqua;	
+	
+	font-family: curse-font;
+	font-weight:100;
+	
+}
+
+
+
+.about-bio{
+	padding-top: 120px;
+	padding-right: 50px;
+	position: absolute;
+	left:50%;
+		overflow: hidden;
+}
 
 
 
 
+.about-pic img{
+	padding-top: 0px;
+	width: 90%;
+	padding-left: 50px;
+	position: absolute;
+	padding-top: 20px;
+	left:1%;
+	height: 500px;
+	overflow: hidden;
+}
+
+
+
+.about-top{
+	padding-bottom: 55px;
+}
+
+.about-top p{
+	font-size: 1.5em;
+	
+}
 
 /************************************************************************************************************
 
 												Gallery
 
 ***************************************************************************************************************/
+.gallery-back{
+
+	background-image:url("../Eli/texturegal.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 #Gallery{
 	width:90%;
 	margin: auto;
 	padding-bottom: 600px;
+	height: 1300px;
 	
 }
 
+.gal{
+	
+	height: 150%;
+}
 
+.gal li:nth-child(7n+0){
+	border-left:solid white;
+}
+.gal li:nth-child(7n+1){
+	border-right:solid white;
+}
+.gal li:nth-child(n+50){
+	border-bottom:solid white;
+}
+
+.gal li:nth-child(7),.gal li:nth-child(6),.gal li:nth-child(5),
+.gal li:nth-child(4),.gal li:nth-child(3),.gal li:nth-child(2),
+.gal li:nth-child(1){
+	border-top:solid white;
+}
 
 .cover{
 	height: 120px;
@@ -335,10 +562,57 @@ footer .logo{
 	padding-top:70px;
 }
 
+
+.gal-thumb{
+	height:130px;
+	width: 130px;
+}
+/************************************************************************************************************
+
+												Booking
+
+***************************************************************************************************************/
+
+.questions{
+	padding-top: 150px;
+	width: 55%;
+	margin: auto;
+	padding-bottom: 150px;
+	
+}
+
+
+/************************************************************************************************************
+
+												Carousel
+
+***************************************************************************************************************/
+#carousel-wedding{
+	padding-top: 17px;
+	padding-bottom: 0px;
+}
+
+.wed-space{
+	padding-top: 30px;
+}
+
+.wed-space h3{
+	font-family: Ubuntu;
+	font-weight: 100;	
+	font-size: 1.3em;
+	
+}
+.item img{
+	max-height:400px;
+	width:1400px;
+}
+
 /************************************************************************************************************
 
 											Media Queries
 											
 ***************************************************************************************************************/
 
-
+#h1{
+	font-family: curse-font;
+}
